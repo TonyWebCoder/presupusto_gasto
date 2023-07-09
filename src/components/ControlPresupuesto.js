@@ -18,5 +18,9 @@ function ControlPresupuesto({presupuesto, restante}) {
         </>
     );
 }
+ControlPresupuesto.prototype = {
+    presupuesto: PropTypes.number.isRequired,
+    restante: PropTypes.number.isRequired
+}
 
 export default ControlPresupuesto;
